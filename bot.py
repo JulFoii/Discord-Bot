@@ -30,7 +30,7 @@ async def status_task():
             role = guild.get_role(904328146239758376)
             if role:
                 if role.position < guild.get_member(client.user.id).top_role.position:
-                    await role.edit(colour=random.choice(colors))
+                    await role.edit(colour=random.choice(colors)) 
 
 
 def is_not_pinned(mess):
