@@ -23,7 +23,7 @@ async def status_task():
     while True:
         await client.change_presence(activity=discord.Game('GTA-V'), status=discord.Status.online)
         await asyncio.sleep(3)
-        await client.change_presence(activity=discord.Game('Julfoi-Bot'), status=discord.Status.online)
+        await client.change_presence(activity=discord.Game('Fun-Bot'), status=discord.Status.online)
         await asyncio.sleep(3)
         if client.get_guild(241942511461859328):
             guild: Guild = client.get_guild(241942511461859328)
@@ -42,7 +42,7 @@ async def on_message(message):
     if message.author.bot:
         return
     if '!help' in message.content:
-        await message.channel.send('**Hilfe zum Julfoi-Bot**\r\n'
+        await message.channel.send('**Hilfe zum Fun-Bot**\r\n'
                                    '!help - Zeigt diese Hilfe an')
     if message.content.startswith('!userinfo'):
         args = message.content.split(' ')
@@ -84,4 +84,4 @@ async def on_message(message):
                             .format(frage, random.choice(antworten)))
 
 
-client.run('OTAyNjA5NDQ0OTQ3NTA5MjU4.YXg6jQ.YTxuq7N_A5Wj-tEdT4GiVSiSBN8')
+client.run('')
